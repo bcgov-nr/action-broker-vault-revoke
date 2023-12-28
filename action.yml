@@ -1,0 +1,25 @@
+name: NR Broker vault token revoke action
+description: Revokes a vault token.
+branding:
+  icon: package
+  color: blue
+
+inputs:
+  vault_token:
+    description: The token to revoke
+    required: true
+  vault_url:
+    default: https://knox.io.nrs.gov.bc.ca
+    description: The vault url.
+
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+    - id: vault-token-revoke
+      shell: bash
+      env:
+        VAULT_TOKEN: ${{ inputs.vault_token }}
+        VAULT_URL: ${{ inputs.vault_url }}
+      run: vault-token-revoke.sh
