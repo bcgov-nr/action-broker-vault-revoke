@@ -1,6 +1,6 @@
 # Broker Action Vault Revoke V1
 
-This action revokes a vault token.
+This action calls the Vault API to revoke the token. See: [Vault API - Revoke a token (Self)](https://developer.hashicorp.com/vault/api-docs/auth/token#revoke-a-token-self)
 
 # Broker Documention
 
