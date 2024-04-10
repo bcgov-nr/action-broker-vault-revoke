@@ -1,4 +1,4 @@
-# Broker Action Vault Revoke V1
+# Broker Action Vault Revoke V2
 
 This action calls the Vault API to revoke the token. See: [Vault API - Revoke a token (Self)](https://developer.hashicorp.com/vault/api-docs/auth/token#revoke-a-token-self)
 
@@ -10,7 +10,7 @@ Please refer to the [NR Broker Repository](https://github.com/bcgov-nr/nr-broker
 
 <!-- start usage -->
 ```yaml
-- uses: bcgov-nr/action-broker-vault-revoke@v1
+- uses: bcgov-nr/action-broker-vault-revoke@v2
   with:
     # The vault token to revoke
     vault_token: ''
