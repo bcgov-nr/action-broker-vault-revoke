@@ -4,7 +4,7 @@ This action calls the Vault API to revoke the token. See: [Vault API - Revoke a 
 
 # Broker Documentation
 
-Please refer to the [NR Broker Repository](https://github.com/bcgov-nr/nr-broker) for full usage details.
+Please refer to the [NR Broker Repository](https://github.com/bcgov/nr-broker) for full usage details.
 
 # Usage
 
